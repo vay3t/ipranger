@@ -17,8 +17,8 @@ if [ $? -eq 0 ]; then
 			echo "[-] Country code does not exist"
 		fi
 	else
-		echo "[*] Usage: $0 <country code>"
-		echo "Example: $0 us"
+		echo "[*] Usage: bash $0 <country code>"
+		echo "Example: bash $0 us"
 	fi
 else
 	echo "[-] please install curl"

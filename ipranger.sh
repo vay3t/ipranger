@@ -9,7 +9,7 @@ function req(){
 }
 export -f req
 
-which curl &> /dev/null
+type curl &> /dev/null
 if [ $? -eq 0 ]; then
 	if [ $# -eq 1 ]; then
 		statuscode=$(curl https://ipinfo.io/countries/$1 -I -s | grep HTTP | awk '{print $2}')
